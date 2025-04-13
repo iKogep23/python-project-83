@@ -1,5 +1,6 @@
 from flask import Flask, request
 from dotenv import load_dotenv
+import os
 
 # Это callable WSGI-приложение
 app = Flask(__name__)
