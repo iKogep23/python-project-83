@@ -15,4 +15,4 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 def index():
     return render_template (
         'index.html'
-    (
+    )
