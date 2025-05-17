@@ -7,7 +7,7 @@ CREATE TABLE urls (
     created_at DATE DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE urls_checks (
+CREATE TABLE url_checks (
     id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     url_id bigint REFERENCES urls (id),
     status_code INT,
