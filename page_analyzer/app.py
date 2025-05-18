@@ -114,7 +114,7 @@ def add_url():
 
     if get_DB_select_id_exists(new_url):
         id = get_DB_select_id(new_url)
-        flash('Страница уже существует', 'success')
+        flash('Страница уже существует', 'info')
         return redirect(url_for('url_page', id=id), code=302)
 
     get_DB_insert_add_url(new_url, created_at)

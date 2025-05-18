@@ -5,6 +5,8 @@
   {% for category, message in messages %}
     {% if category == "success" %}
       <div class="alert alert-success" role="alert">{{ message }}</div>
+    {% elif category == "info" %}
+      <div class="alert alert-info" role="alert">{{ message }}</div>
     {% else %}
       <div class="alert alert-danger" role="alert">{{ message }} </div>
     {% endif %}
@@ -12,7 +14,7 @@
 {% endif %}
 {% endblock %}
 
-{% block h1 %}{{ new_url }}{% endblock %}
+{% block h1 %}Сайт: {{ new_url }}{% endblock %}
 
 {% block row %}{% endblock %}
 {% block table_responsive %}
@@ -39,7 +41,7 @@
 {% block mt_5mb_3 %}
 <h2 class="mt-5 mb-3">Проверки</h2>
 <form method="post" action="{{ url_for('url_checks', id=id) }}">
-  <input type="submit" class="btn btn-primary" value="Запустить проверку">
+  <input class="btn btn-primary" type="submit" value="Запустить проверку">
 </form>
 {% endblock %}
 
@@ -55,7 +57,7 @@
         <th>description</th>
         <th>Дата создания</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       {% for url_check in url_checks_list %}
       <tr>
