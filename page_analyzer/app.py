@@ -4,7 +4,6 @@
 from flask import Flask, request, redirect, render_template, url_for, flash, get_flashed_messages, abort
 from dotenv import load_dotenv
 import os
-# import psycopg2 удалить
 import requests
 from datetime import date
 
