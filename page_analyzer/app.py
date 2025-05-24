@@ -66,7 +66,7 @@ def url_checks(id):
     name = get_DB_select_name(id)
 
     try:
-        resp = requests.get(name, timeout=3)
+        resp = requests.get(name, timeout=300)
     except requests.exceptions.RequestException:
         created_at = get_DB_select_created_at(id)
         flash('Произошла ошибка при проверке', 'error')
