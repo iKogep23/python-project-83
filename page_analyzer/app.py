@@ -4,6 +4,7 @@
 from flask import Flask, request, redirect, render_template, url_for, flash, get_flashed_messages, abort
 from dotenv import load_dotenv
 import os
+import psycopg2
 import requests
 from datetime import date
 
@@ -66,7 +67,7 @@ def url_checks(id):
     name = get_DB_select_name(id)
 
     try:
-        resp = requests.get(name, timeout=300)
+        resp = requests.get(name)
     except requests.exceptions.RequestException:
         created_at = get_DB_select_created_at(id)
         flash('Произошла ошибка при проверке', 'error')
