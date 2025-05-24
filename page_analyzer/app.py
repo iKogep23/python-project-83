@@ -57,7 +57,8 @@ def url_page(id):
         abort(404)
     else:
         if isinstance(result_DB_query, list):
-            new_url, created_at, url_checks_list = get_url_checks_list(result_DB_query)
+            res = get_url_checks_list(result_DB_query)
+            new_url, created_at, url_checks_list = res
         else:
             new_url, created_at = result_DB_query
 
