@@ -1,4 +1,5 @@
 ### Hexlet tests and linter status:
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dc5b531e2649405a832939d422b365df)](https://app.codacy.com/gh/iKogep23/python-project-83?utm_source=github.com&utm_medium=referral&utm_content=iKogep23/python-project-83&utm_campaign=Badge_Grade)
 [![Actions Status](https://github.com/iKogep23/python-project-83/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/iKogep23/python-project-83/actions)
 
 # Page Analyzer
