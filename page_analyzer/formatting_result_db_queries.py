@@ -28,7 +28,7 @@ def get_urls(list_of_urls):
                     'created_at': item[2],
                     'status_code': item[3]}
                   for item in list_of_urls],
-                  key = lambda k: k['id'], reverse=True)
+                  key=lambda k: k['id'], reverse=True)
     urls = replace_none(urls)
     return urls
 

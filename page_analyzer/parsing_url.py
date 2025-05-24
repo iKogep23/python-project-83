@@ -6,7 +6,7 @@ import requests
 
 
 def parsing_url(name):
-    resp = requests.get(name)
+    resp = requests.get(name, timeout=3)
     soup = BeautifulSoup(resp.text, 'html.parser')
     url_h1 = soup.h1.string if soup.h1 else ''
     url_title = soup.title.string if soup.title else ''
