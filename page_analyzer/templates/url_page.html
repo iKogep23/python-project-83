@@ -19,7 +19,7 @@
 {% block row %}{% endblock %}
 {% block table_responsive %}
 <div class="table-responsive">
-  <table class="table table-bordered table-hover text-nowrap" data-test="url">
+  <table class="table table-bordered table-hover text-nowrap" role="presentation" data-test="url">
     <tbody>
       <tr>
         <td>ID</td>
@@ -34,7 +34,7 @@
         <td>{{ created_at }}</td>
       </tr>
     </tbody>
-  <table>
+  </table>
 </div>
 {% endblock %}
 
