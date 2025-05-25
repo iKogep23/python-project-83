@@ -19,18 +19,18 @@
 {% block row %}{% endblock %}
 {% block table_responsive %}
 <div class="table-responsive">
-  <table class="table table-bordered table-hover text-nowrap" role="img" data-test="url">
+  <table class="table table-bordered table-hover text-nowrap" data-test="url">
     <tbody>
       <tr>
-        <td>ID</td>
+        <th style="font-weight:normal">ID</th>
         <td>{{ id }}</td>
       </tr>
       <tr>
-        <td>Имя</td>
+        <th style="font-weight:normal">Имя</th>
         <td>{{ new_url }}</td>
       </tr>
       <tr>
-        <td>Дата создания</td>
+        <th style="font-weight:normal">Дата создания</th>
         <td>{{ created_at }}</td>
       </tr>
     </tbody>
